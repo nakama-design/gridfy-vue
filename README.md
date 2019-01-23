@@ -156,6 +156,8 @@ Vue.use(Gridfy);
 </grid>
 ```
 
+## Related - [Gridfy JS](https://github.com/muhibbudins/gridfy)
+
 ## Changelog
 
 See the GitHub [release history](https://github.com/muhibbudins/gridfy-vue.git/releases).
