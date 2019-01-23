@@ -1,7 +1,7 @@
 {
   "name": "gridfy-vue",
   "description": "Dynamic Layout with CSS Grid on Vue",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "main": "dist/gridfy-vue.common.js",
   "module": "dist/gridfy-vue.esm.js",
@@ -14,12 +14,12 @@
   "author": "Muhibbudin Suretno <muhibbudinsuretno1@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/git@github.com:muhibbudins/gridfy-vue.git.git"
+    "url": "https://github.com/muhibbudins/gridfy-vue.git.git"
   },
   "bugs": {
-    "url": "https://github.com/git@github.com:muhibbudins/gridfy-vue.git/issues"
+    "url": "https://github.com/muhibbudins/gridfy-vue.git/issues"
   },
-  "homepage": "https://github.com/git@github.com:muhibbudins/gridfy-vue.git#readme",
+  "homepage": "https://github.com/muhibbudins/gridfy-vue.git#readme",
   "keywords": [
     "vue",
     "vue-component",
