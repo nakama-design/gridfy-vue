@@ -1,11 +1,11 @@
-import HelloWorld from "./components/HelloWorld";
+import Grid from "./components/index";
 
 const LibraryModule = {
-  HelloWorld,
+  Grid,
 
   install(Vue) {
     // Register components with vue
-    Vue.component("hello-world", HelloWorld);
+    Vue.component("grid", Grid);
   }
 };
 
@@ -13,4 +13,4 @@ const LibraryModule = {
 export default LibraryModule;
 
 // Export components
-export { HelloWorld };
+export { Grid };

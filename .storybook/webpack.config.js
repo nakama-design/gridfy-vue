@@ -11,6 +11,12 @@ module.exports = (baseConfig, env) => {
 
   // Add alias for @ pointing to src
   config.resolve.alias['@'] = path.resolve('src')
+  
+  config.module.rules.push({
+    test: /\.s?css$/,
+    loaders: ["vue-style-loader", "css-loader", "sass-loader"],
+    include: path.resolve(__dirname, "../")
+  })
 
   return config;
 };

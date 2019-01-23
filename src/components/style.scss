@@ -1,0 +1,24 @@
+.grid {
+  display: grid;
+  grid-gap: 5px;
+
+  &> * {
+    grid-column-start: auto;
+    grid-row-start: auto;
+  }
+  .example {
+    padding: 2rem;
+    border: 1px solid #DEDEDE;
+  }
+
+  @media (max-width: 768px) {
+    &-responsive {
+      grid-template-columns: repeat(1, auto) !important;
+
+      &> .grid-item {
+        grid-column: auto !important;
+        grid-row: auto !important;
+      }
+    }
+  }
+}
