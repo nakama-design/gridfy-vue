@@ -7,7 +7,7 @@
 ![Commitizen](https://img.shields.io/badge/Commitizen-enabled-brightgreen.svg)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 ![Npm badge](https://img.shields.io/npm/v/gridfy-vue.svg)
-[![Build Status](https://travis-ci.org/git@github.com:muhibbudins/gridfy-vue.git.svg?branch=master)](https://travis-ci.org/git@github.com:muhibbudins/gridfy-vue.git)
+[![Build Status](https://travis-ci.org/muhibbudins/gridfy-vue.git.svg?branch=master)](https://travis-ci.org/muhibbudins/gridfy-vue.git)
 
 > Dynamic Layout with CSS Grid on Vue
 
@@ -16,6 +16,10 @@
 ## Installation
 ```
 npm install gridfy-vue
+
+#
+
+yarn add gridfy-vue
 ```
 gridfy-vue can be used as a module in both CommonJS and ES modular environments.
 
@@ -26,12 +30,12 @@ When in non-modular environment, gridfy-vue will register all the components to 
 //
 // You can register a component manually
 //
-import { HelloWorld } from 'gridfy-vue';
+import { Grid } from 'gridfy-vue';
 
 export default {
   ...
   components: {
-    HelloWorld
+    Grid
   },
   ...
 };
@@ -39,10 +43,10 @@ export default {
 //
 // or register the whole module with vue
 //
-import ModuleLibrary from 'gridfy-vue';
+import Gridfy from 'gridfy-vue';
 
 // Install this library
-Vue.use(ModuleLibrary);
+Vue.use(Gridfy);
 ```
 
 ### CommonJS
@@ -51,12 +55,12 @@ Vue.use(ModuleLibrary);
 // You can register a component manually
 //
 var Vue = require('vue');
-var ModuleLibrary = require('gridfy-vue');
+var Gridfy = require('gridfy-vue');
 
 var YourComponent = Vue.extend({
   ...
   components: {
-    'hello-world': ModuleLibrary.HelloWorld
+    'grid': Gridfy.Grid
   },
   ...
 });
@@ -65,10 +69,10 @@ var YourComponent = Vue.extend({
 // or register the whole module with vue
 //
 var Vue = require('vue');
-var ModuleLibrary = require('gridfy-vue');
+var Gridfy = require('gridfy-vue');
 
 // Install this library
-Vue.use(ModuleLibrary);
+Vue.use(Gridfy);
 ```
 
 ### Browser
@@ -82,12 +86,79 @@ Vue.use(ModuleLibrary);
 ### After that, you can use it in your templates:
 
 ```html
-<hello-world></hello-world>
+<!-- Static grid -->
+<grid column="4">
+  <div class="example">
+    Column 1
+  </div>
+  <div class="example">
+    Column 2
+  </div>
+  <div class="example">
+    Column 2
+  </div>
+</grid>
+
+<!-- Dynamic grid -->
+<grid dynamic column="3">
+  <div column="1" row="1" class="example">
+    Column 1
+  </div>
+  <div column="1" row="2" class="example">
+    Column 1
+  </div>
+  <div column="2" row="2" class="example">
+    Column 2
+  </div>
+  <div column="3" row="3" class="example">
+    Column 2
+  </div>
+</grid>
+
+<!-- Auto grid -->
+<grid column="3">
+  <div :desktop="['1', '1']" :tablet="['2', '1']" class="example">
+    Column 1
+  </div>
+  <div :desktop="['2', '2']" :tablet="['1', '2']" class="example">
+    Column 2
+  </div>
+  <div :desktop="['3', '3']" :tablet="['3', '3']" class="example">
+    Column 2
+  </div>
+</grid>
+
+<!-- Stacked grid -->
+<grid column="3">
+  <div class="example">
+    <grid column="2">
+      <div class="example">
+        Column 1
+      </div>
+      <div class="example">
+        Column 2
+      </div>
+    </grid>
+  </div>
+  <div class="example">
+    Column 2
+  </div>
+  <div class="example">
+    <grid column="2">
+      <div class="example">
+        Column 1
+      </div>
+      <div class="example">
+        Column 2
+      </div>
+    </grid>
+  </div>
+</grid>
 ```
 
 ## Changelog
 
-See the GitHub [release history](https://github.com/git@github.com:muhibbudins/gridfy-vue.git/releases).
+See the GitHub [release history](https://github.com/muhibbudins/gridfy-vue.git/releases).
 
 ## Contributing
 
