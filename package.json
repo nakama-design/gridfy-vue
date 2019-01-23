@@ -1,7 +1,7 @@
 {
   "name": "gridfy-vue",
   "description": "Dynamic Layout with CSS Grid on Vue",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "license": "MIT",
   "main": "dist/gridfy-vue.common.js",
   "module": "dist/gridfy-vue.esm.js",
