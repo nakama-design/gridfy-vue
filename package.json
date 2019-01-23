@@ -1,7 +1,7 @@
 {
   "name": "gridfy-vue",
   "description": "Dynamic Layout with CSS Grid on Vue",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "main": "dist/gridfy-vue.common.js",
   "module": "dist/gridfy-vue.esm.js",
@@ -96,7 +96,11 @@
     "vue": "^2.5.13",
     "vue-jest": "^1.4.0",
     "vue-loader": "^13.6.2",
-    "vue-template-compiler": "^2.5.13"
+    "vue-template-compiler": "^2.5.13",
+    "css-loader": "^2.1.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "vue-style-loader": "^4.1.2"
   },
   "config": {
     "commitizen": {
@@ -123,11 +127,5 @@
       "@semantic-release/git",
       "@semantic-release/github"
     ]
-  },
-  "dependencies": {
-    "css-loader": "^2.1.0",
-    "node-sass": "^4.11.0",
-    "sass-loader": "^7.1.0",
-    "vue-style-loader": "^4.1.2"
   }
 }
