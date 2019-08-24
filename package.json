@@ -68,7 +68,7 @@
     "eslint-import-resolver-babel-module": "5.1.0",
     "eslint-plugin-html": "6.0.0",
     "eslint-plugin-import": "2.18.2",
-    "eslint-plugin-jest": "21.27.2",
+    "eslint-plugin-jest": "22.15.2",
     "eslint-plugin-prettier": "3.1.0",
     "eslint-plugin-vue": "4.7.1",
     "husky": "0.14.3",
