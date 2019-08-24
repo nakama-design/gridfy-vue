@@ -81,7 +81,7 @@
     "prettier": "1.18.2",
     "rollup": "1.20.1",
     "rollup-plugin-babel": "4.3.3",
-    "rollup-plugin-commonjs": "8.4.1",
+    "rollup-plugin-commonjs": "10.0.2",
     "rollup-plugin-filesize": "6.2.0",
     "rollup-plugin-json": "2.3.1",
     "rollup-plugin-license": "0.12.1",
