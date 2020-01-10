@@ -88,7 +88,7 @@
     "rollup-plugin-node-resolve": "5.2.0",
     "rollup-plugin-replace": "2.2.0",
     "rollup-plugin-uglify": "6.0.4",
-    "rollup-plugin-vue": "5.1.4",
+    "rollup-plugin-vue": "5.1.5",
     "semantic-release": "16.0.0",
     "stylus": "0.54.7",
     "stylus-loader": "3.0.2",
