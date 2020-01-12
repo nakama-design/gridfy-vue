@@ -97,7 +97,7 @@
     "vue-jest": "3.0.5",
     "vue-loader": "15.8.3",
     "vue-template-compiler": "2.6.11",
-    "css-loader": "3.4.1",
+    "css-loader": "3.4.2",
     "node-sass": "4.13.0",
     "sass-loader": "8.0.1",
     "vue-style-loader": "4.1.2"
