@@ -78,7 +78,7 @@
     "jest-vue-preprocessor": "1.7.1",
     "lint-staged": "10.1.2",
     "lodash": "4.17.15",
-    "prettier": "2.0.3",
+    "prettier": "2.0.4",
     "rollup": "2.3.3",
     "rollup-plugin-babel": "4.4.0",
     "rollup-plugin-commonjs": "10.1.0",
