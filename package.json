@@ -90,7 +90,7 @@
     "rollup-plugin-uglify": "6.0.4",
     "rollup-plugin-vue": "5.1.9",
     "semantic-release": "17.1.0",
-    "stylus": "0.54.7",
+    "stylus": "0.54.8",
     "stylus-loader": "3.0.2",
     "uglify-es": "3.3.10",
     "vue": "2.6.11",
