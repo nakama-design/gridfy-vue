@@ -89,7 +89,7 @@
     "rollup-plugin-replace": "2.2.0",
     "rollup-plugin-uglify": "6.0.4",
     "rollup-plugin-vue": "5.1.9",
-    "semantic-release": "17.1.0",
+    "semantic-release": "17.2.3",
     "stylus": "0.54.7",
     "stylus-loader": "3.0.2",
     "uglify-es": "3.3.10",
